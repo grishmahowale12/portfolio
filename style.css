@@ -125,7 +125,7 @@ a:hover{ text-decoration:underline; }
   transition: transform .25s ease, box-shadow .25s ease;
 }
 .section-box .card + .card { 
-  margin-top: 28px; /* change to 40px if you want it to match section spacing exactly */
+  margin-top: 40px; /* change to 40px if you want it to match section spacing exactly */
 }
 .card:hover{ transform:translateY(-4px); box-shadow:var(--shadow-lg); }
 
