@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-    <nav>
-        <ul>
+<header class="header">
+    <nav class="nav container">
+        <a href="index.html" class="logo">Grishma<span class="wave">👋</span></a>
+        <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About Me</a></li>
             <li><a href="projects.html" class="active">Projects</a></li>
@@ -19,22 +20,29 @@
     </nav>
 </header>
 
-<section>
+<section class="section container section-box">
     <h1>Projects</h1>
-    <h3><a href="https://www.hugaroo.org/" target="_blank">Revamped Hugaroo Inc. website</a></h3>
-    <img src="images/hugaroo.png" alt="Hugaroo Website Screenshot" style="max-width:100%; border-radius:8px;">
-    <p>Redesigned the Hugaroo nonprofit’s website to enhance user navigation, modernize design elements, and improve accessibility compliance.</p>
 
-    <h3><a href="https://github.com/grishmahowale12/RestaurantOrderingSystem" target="_blank">Customer Online Ordering System</a></h3>
-    <ul><img src="images/hugaroo.png" alt="Hugaroo Website Screenshot" style="max-width:100%; border-radius:8px;">
-    <p>Collaborated in a team to design and develop a functional customer-facing online ordering system. Implemented features for browsing items, applying promotional codes, and managing orders. Contributed to front-end interface improvements, back-end functionality updates, and integration testing to ensure a smooth user experience.</p>
-    
-    <h3><a href="https://github.com/grishmahowale12/Ai3" target="_blank">CyberThreat Response Predictor</a></h3>
-    <ul><img src="images/hugaroo.png" alt="Hugaroo Website Screenshot" style="max-width:100%; border-radius:8px;">
-    <p>Our team built a predictive model to forecast how long it takes to contain and resolve different types of cyberattacks ranging from ransomware to insider threats. I led the data preprocessing phase, which involved cleaning and preparing a dataset of 3,000+ real-world incidents. This step was crucial to ensure accurate insights by handling missing values, formatting features, and establishing a solid foundation for the machine learning pipeline. While the tool is still evolving, it holds great promise in supporting IT teams to better allocate resources and minimize operational disruption during breaches.</p>
+    <div class="card">
+        <h3><a href="https://www.hugaroo.org/" target="_blank">Revamped Hugaroo Inc. website</a></h3>
+        <img src="images/hugaroo.png" alt="Hugaroo Website Screenshot" class="project-img">
+        <p>Redesigned the Hugaroo nonprofit’s website to enhance user navigation, modernize design elements, and improve accessibility compliance.</p>
+    </div>
+
+    <div class="card">
+        <h3><a href="https://github.com/grishmahowale12/RestaurantOrderingSystem" target="_blank">Customer Online Ordering System</a></h3>
+        <img src="images/hugaroo.png" alt="Ordering System Screenshot" class="project-img">
+        <p>Collaborated on designing a customer-facing online ordering system. Improved front-end interface, back-end functionality, and integrated order management features for a smooth user experience.</p>
+    </div>
+
+    <div class="card">
+        <h3><a href="https://github.com/grishmahowale12/Ai3" target="_blank">CyberThreat Response Predictor</a></h3>
+        <img src="images/hugaroo.png" alt="CyberThreat Screenshot" class="project-img">
+        <p>Built a predictive model for cyberattack resolution times. Led data preprocessing for 3,000+ incidents, ensuring high-quality input for machine learning and supporting IT teams in resource allocation.</p>
+    </div>
 </section>
 
-<footer>
+<footer class="footer container">
     <p>© 2025 Grishma Howale</p>
 </footer>
 </body>
