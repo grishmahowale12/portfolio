@@ -116,14 +116,16 @@ a:hover{ text-decoration:underline; }
 .avatar{ width:220px; height:220px; border-radius:26px; object-fit:cover; border:3px solid var(--lavender-300); box-shadow:var(--shadow); }
 
 /* Cards grid */
-.grid{ display:grid; gap:18px; }
+.grid{ display:grid; gap:18px;}
 .grid.cols-3{ grid-template-columns: repeat(3, 1fr); }
 .grid.cols-2{ grid-template-columns: repeat(2, 1fr); }
 .card{
   background:var(--card);
   border:1px solid var(--border); border-radius:16px; padding:18px; box-shadow:var(--shadow);
   transition: transform .25s ease, box-shadow .25s ease;
-  margin-bottom: 40px; /* Extra space between sections */
+}
+.section-box .card + .card { 
+  margin-top: 28px; /* change to 40px if you want it to match section spacing exactly */
 }
 .card:hover{ transform:translateY(-4px); box-shadow:var(--shadow-lg); }
 
