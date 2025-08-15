@@ -123,6 +123,7 @@ a:hover{ text-decoration:underline; }
   background:var(--card);
   border:1px solid var(--border); border-radius:16px; padding:18px; box-shadow:var(--shadow);
   transition: transform .25s ease, box-shadow .25s ease;
+  margin-bottom: 40px; /* Extra space between sections */
 }
 .card:hover{ transform:translateY(-4px); box-shadow:var(--shadow-lg); }
 
