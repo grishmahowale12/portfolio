@@ -175,6 +175,3 @@ textarea{ min-height:130px; resize:vertical; }
   .float, .icon-stroke *, .reveal{ animation:none !important; transition:none !important; }
 }
 
-.section-box {
-  margin-bottom: 40px; /* keeps the lavender breathing room */
-}
