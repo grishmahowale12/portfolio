@@ -1,6 +1,6 @@
 /* ====== Grishma Portfolio Theme (Lavender Tech) ====== */
 /* Font */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
 
 /* Color System */
 :root{
@@ -24,12 +24,12 @@
 html{ scroll-behavior:smooth; }
 body{
   margin:0;
-  font-family:"Poppins",system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+  font-family:"Quicksand",system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
   color:var(--ink);
   background:
-    radial-gradient(1200px 600px at 10% -10%, var(--lavender-100), transparent 70%),
-    radial-gradient(1000px 500px at 110% 10%, var(--lavender-50), transparent 60%),
-    #fff;
+    radial-gradient(1200px 600px at 10% -10%, var(--lavender-200), transparent 70%),
+    radial-gradient(1000px 500px at 110% 10%, var(--lavender-100), transparent 60%),
+    #f7f5ff;
 }
 
 /* Utility */
@@ -41,6 +41,7 @@ body{
   border:1px solid var(--border);
   box-shadow:var(--shadow);
   padding:24px;
+  margin-bottom: 40px; /* Extra space between sections */
   transition:transform .25s ease, box-shadow .25s ease;
   animation:fadeUp .7s ease both;
 }
@@ -73,10 +74,9 @@ a:hover{ text-decoration:underline; }
 .logo{
   font-weight:700; letter-spacing:.2px; font-size:1.2rem; color:var(--ink);
 }
-.logo .wave{ display:inline-block; transform-origin:70% 70%; }
-@keyframes wave{0%{transform:rotate(0)}10%{transform:rotate(12deg)}20%{transform:rotate(-8deg)}30%{transform:rotate(10deg)}40%{transform:rotate(-4deg)}50%{transform:rotate(8deg)}60%,100%{transform:rotate(0)}}
-.logo:hover .wave{ animation:wave 2s ease infinite; }
+/* Removed wave animation and styling */
 
+/* Nav Links */
 .nav-links{ display:flex; gap:1.1rem; align-items:center; }
 .nav-links a{
   padding:.45rem .8rem; border-radius:10px; font-weight:500; color:var(--ink);
@@ -140,7 +140,7 @@ textarea{ min-height:130px; resize:vertical; }
 /* Footer */
 .footer{ padding:30px 0; border-top:1px solid var(--lavender-200); background:var(--lavender-50); color:var(--ink-2); }
 
-/* Icons (animated line draw + float) */
+/* Icons */
 .icon{ width:26px; height:26px; vertical-align:-6px; }
 .icon-wrap{ display:inline-flex; align-items:center; justify-content:center; margin-right:10px;
   padding:8px; border-radius:12px; background:linear-gradient(135deg, var(--lavender-100), #fff);
