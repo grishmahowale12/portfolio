@@ -115,6 +115,18 @@ a:hover{ text-decoration:underline; }
 }
 .avatar{ width:220px; height:220px; border-radius:26px; object-fit:cover; border:3px solid var(--lavender-300); box-shadow:var(--shadow); }
 
+.hero-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.hero-pic {
+    width: 150px;
+    border-radius: 50%;
+    border: 3px solid #333;
+}
+
 /* Cards grid */
 .grid{ display:grid; gap:18px;}
 .grid.cols-3{ grid-template-columns: repeat(3, 1fr); }
@@ -130,7 +142,16 @@ a:hover{ text-decoration:underline; }
 .card:hover{ transform:translateY(-4px); box-shadow:var(--shadow-lg); }
 
 /* Project image */
-.project-img{ width:100%; aspect-ratio: 16/9; object-fit:cover; border-radius:12px; border:1px solid var(--lavender-300); }
+.project-img {
+  max-width: 80%;       /* not the full card width */
+  height: auto;         /* keep proportions */
+  display: block;       /* so margin auto works */
+  margin: 0 auto 16px;  /* center the image + spacing below */
+  border-radius: 12px;
+  border: 1px solid var(--lavender-300);
+  object-fit: contain;  /* show the whole screenshot without cutting */
+}
+
 
 /* Form */
 .input, textarea{
