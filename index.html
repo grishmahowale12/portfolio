@@ -7,66 +7,158 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="header">
+  <canvas id="tech-bg"></canvas>
+
+  <header class="header">
     <nav class="nav container">
-        <a href="index.html" class="logo">Welcome To My Portfolio<span class="laptop"></span></a>
-        <ul class="nav-links">
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="certifications.html">Certifications</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+      <a href="#home" class="logo">Welcome To My Portfolio<span class="laptop"></span></a>
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
-</header>
+  </header>
 
-<section class="hero section container">
+  <!-- Home Section -->
+  <section id="home" class="hero section container">
     <div class="hero-content">
-        <img src="images/myphoto.jpg" alt="Grishma Howale" class="hero-pic">
-        <div>
-            <h1>Grishma Howale</h1>
-            <p><strong>Certified Cybersecurity Analyst | Professional IT Operations | Technology Innovator</strong></p>
-            <div class="hero-buttons">
-                <a href="projects.html" class="btn">View My Projects</a>
-                <a href="contact.html" class="btn btn-secondary">Contact Me</a>
-            </div>
+      <img src="images/myphoto.jpg" alt="Grishma Howale" class="hero-pic">
+      <div>
+        <h1>Grishma Howale</h1>
+        <p><strong>Certified Cybersecurity Analyst | Professional IT Operations | Technology Innovator</strong></p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn">View My Projects</a>
+          <a href="#contact" class="btn btn-secondary">Contact Me</a>
         </div>
+      </div>
     </div>
-</section>
+  </section>
 
-<section class="about-preview section container section-box">
+ <!-- About Me Preview on Home -->
+  <section class="about-preview section container section-box">
     <h2>About Me <span></span></h2>
     <p>Hi, I’m Grishma, a Computer Science major with a concentration in Cybersecurity, graduating in December 2025. I love building systems that are secure, efficient, and user-friendly.</p>
     <p>My work combines <strong>technical expertise</strong> with creativity whether it’s coding, optimizing websites, or designing solutions that enhance user experiences. This summer, I revamped the <strong>Hugaroo</strong> website, improving its design, navigation, and accessibility for a wider audience.</p>
     <a href="about.html" class="btn">Learn More</a>
-</section>
+  </section>
 
-<section class="experience section container section-box">
+  <!-- Recent Experience -->
+  <section class="experience section container section-box">
     <h2>Recent Experience <span></span></h2>
     <div class="experience-cards">
-        <div class="experience-card">
-            <h3><a href="https://www.hugaroo.org/" target="_blank">Hugaroo, Inc.</a> – Summer 2025 Internship</h3>
-            <ul class="experience-list">
-                <li>💡 Revamped website UI design, improved layout, and enhanced accessibility.</li>
-                <li>🚀 Optimized website performance and navigation, increasing session duration by 35%.</li>
-                <li>📝 Automated workflows and published 10+ digital content pieces to boost outreach by 20%.</li>
-            </ul>
-        </div>
+      <div class="experience-card">
+        <h3><a href="https://www.hugaroo.org/" target="_blank">Hugaroo, Inc.</a> – Summer 2025 Internship</h3>
+        <ul class="experience-list">
+          <li>💡 Revamped website UI design, improved layout, and enhanced accessibility.</li>
+          <li>🚀 Optimized website performance and navigation, increasing session duration by 35%.</li>
+          <li>📝 Automated workflows and published 10+ digital content pieces to boost outreach by 20%.</li>
+        </ul>
+      </div>
     </div>
-</section>
+  </section>
 
-
-<section class="education section container section-box">
+  <!-- Education -->
+  <section class="education section container section-box">
     <h2>Education <span></span></h2>
     <div class="education-card">
-        <p>B.S. in Computer Science, Concentration in Cybersecurity<br>
-        University of North Carolina at Charlotte — <strong>Expected December 2025</strong></p>
+      <p>B.S. in Computer Science, Concentration in Cybersecurity<br>
+      University of North Carolina at Charlotte <strong>(UNCC) — Expected December 2025</strong></p>
     </div>
-</section>
+  </section>
 
+  
+  <!-- Projects Section -->
+  <section id="projects" class="section container section-box">
+    <h2>Projects <span></span></h2>
+    <div class="projects-container">
+      <div class="project-card">
+        <div class="project-icons">🌐 🎨 ♿</div>
+        <h3><a href="https://www.hugaroo.org/" target="_blank">Revamped Hugaroo Inc. Website</a></h3>
+        <img src="images/hugaroo.png" alt="Hugaroo Website Screenshot" class="project-img">
+        <p>Redesigned the nonprofit’s website to enhance navigation, modernize design, and improve accessibility compliance.</p>
+      </div>
 
-<footer class="footer container">
+      <div class="project-card">
+        <div class="project-icons">🍽️ 🛒 ⚡</div>
+        <h3><a href="https://github.com/grishmahowale12/RestaurantOrderingSystem" target="_blank">Customer Online Ordering System</a></h3>
+        <img src="images/restaurantordering.png" alt="Ordering System Screenshot" class="project-img">
+        <p>Collaborated on an ordering system with a seamless front-end, robust back-end, and smooth order management features.</p>
+      </div>
+
+      <div class="project-card">
+        <div class="project-icons">🛡️ 📊 🤖</div>
+        <h3><a href="https://github.com/grishmahowale12/Ai3" target="_blank">CyberThreat Response Predictor</a></h3>
+        <img src="images/cyberthreat.png" alt="CyberThreat Screenshot" class="project-img">
+        <p>Developed a predictive model for cyberattack resolution times using 3,000+ incidents, supporting IT teams in decision-making.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section id="certifications" class="certifications section container section-box">
+    <h2>Certifications <span>📜</span></h2>
+    <div class="certification-cards">
+      <div class="certification-card">
+        <img src="https://cdn.simpleicons.org/cisco" alt="Cisco" class="cert-icon">
+        <h3><a href="https://www.credly.com/badges/01975cc5-cf7f-4043-914f-354309f5d5ae" target="_blank">Cisco Networking Basics</a></h3>
+      </div>
+
+      <div class="certification-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS" class="cert-icon">
+        <h3><a href="images/AWS Security Incident Response Overview Certificate.png" target="_blank">AWS Security Incident Response Overview</a></h3>
+      </div>
+
+      <div class="certification-card">
+        <img src="https://cdn.simpleicons.org/tata" alt="TCS" class="cert-icon">
+        <h3><a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/ifobHAoMjQs9s6bKS/gmf3ypEXBj2wvfQWC_ifobHAoMjQs9s6bKS_9GwMeAwFRJR7E4k9C_1734474931224_completion_certificate.pdf" target="_blank">Tata Group – Cybersecurity Analyst Job Simulation</a></h3>
+      </div>
+
+      <div class="certification-card">
+        <img src="https://cdn.simpleicons.org/freecodecamp" alt="freeCodeCamp" class="cert-icon">
+        <h3><a href="https://www.freecodecamp.org/certification/grishmahowale/javascript-algorithms-and-data-structures-v8" target="_blank">JavaScript Algorithms & Data Structures</a></h3>
+      </div>
+
+      <div class="certification-card">
+        <img src="https://cdn.simpleicons.org/freecodecamp" alt="freeCodeCamp" class="cert-icon">
+        <h3><a href="https://www.freecodecamp.org/certification/grishmahowale/responsive-web-design" target="_blank">Responsive Web Design</a></h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section container section-box contact-section">
+    <h2>Let’s Connect <span>🤝</span></h2>
+    <p>If you'd like to collaborate, discuss opportunities, or just say hello, feel free to reach out through any of the platforms below:</p>
+
+    <div class="contact-cards">
+      <div class="contact-card">
+        <img src="https://cdn.simpleicons.org/gmail" alt="Email" class="contact-icon">
+        <h3>Email</h3>
+        <p><a href="mailto:grishmahowale@gmail.com">grishmahowale@gmail.com</a></p>
+      </div>
+
+      <div class="contact-card">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" alt="LinkedIn Logo" width="40" height="40" style="filter: invert(27%) sepia(89%) saturate(1867%) hue-rotate(190deg) brightness(93%) contrast(92%);" />
+        <h3>LinkedIn</h3>
+        <p><a href="https://www.linkedin.com/in/grishma-howale-75a2b1274/" target="_blank">linkedin.com/in/grishmahowale</a></p>
+      </div>
+
+      <div class="contact-card">
+        <img src="https://cdn.simpleicons.org/github" alt="GitHub" class="contact-icon">
+        <h3>GitHub</h3>
+        <p><a href="https://github.com/grishmahowale12" target="_blank">github.com/grishmahowale12</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer container">
     <p>© 2025 Grishma Howale | <a href="contact.html">Get in Touch</a> | <a href="https://www.linkedin.com/in/grishma-howale-75a2b1274/" target="_blank">LinkedIn</a> | <a href="https://github.com/grishmahowale12" target="_blank">Github</a></p>
-</footer>
+  </footer>
+
+  <script src="background.js"></script>
 </body>
 </html>
