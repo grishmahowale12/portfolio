@@ -266,6 +266,8 @@ textarea{ min-height:130px; resize:vertical; }
   padding: 1rem;
   height: 100%; /* makes all cards equal height in grid */
   box-sizing: border-box;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  
 }
 
 .project-card img.project-img {
@@ -276,6 +278,11 @@ textarea{ min-height:130px; resize:vertical; }
   margin: 0.75rem 0;
   border: 1px solid var(--lavender-300);
   background-color: #fff; /* optional: avoids empty transparent gaps */
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
 }
 
 #tech-bg {
